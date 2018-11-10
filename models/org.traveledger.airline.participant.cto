@@ -1,0 +1,22 @@
+namespace org.traveledger.airline.participant 
+
+abstract participant TraveledgerParticipant identified by participantKey {
+  o String participantKey
+  o Contact contact
+}
+
+concept Contact {
+  o String fName
+  o String lname
+  o String email
+}
+
+participant traveledgerNetworkAdmin extends TraveledgerParticipant {
+}
+
+participant traveledgerPersonnel extends TraveledgerParticipant {
+  o String department
+}
+
+participant B2BPartner extends TraveledgerParticipant {
+}

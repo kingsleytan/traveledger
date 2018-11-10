@@ -1,0 +1,13 @@
+namespace org.traveledger.airline.passenger
+
+asset  Passenger identified by passengerId {
+  o String passengerId
+
+  o String fName
+  o String lname
+  o String passportNumber
+  o String nricNumber
+  o DateTime issuanceDate
+  o DateTime expiryDate
+
+}
