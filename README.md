@@ -43,11 +43,12 @@ To upgrade composer network after code changes:
 3. Run `composer network upgrade -c PeerAdmin@hlfv1 -n traveledger -V 0.0.2`
 
 # Composer REST Server
+- Exposes Business Network Apps as RESTful API
 Solve bug in 0.20.4:
 `npm uninstall -g composer-rest-server`
 `npm install -g composer-rest-server@0.20.2`
 
-composer-rest-server
+Run command $`composer-rest-server`
 ? Enter the name of the business network card to use: `admin@traveledger`
 ? Specify if you want namespaces in the generated REST API: `never use namespaces`
 ? Specify if you want to use an API key to secure the REST API: `No`
@@ -56,3 +57,14 @@ composer-rest-server
 ? Specify a key if you want to enable dynamic logging:
 ? Specify if you want to enable event publication over WebSockets: `No`
 ? Specify if you want to enable TLS security for the REST API: `No`
+
+# Authentication
+- Go to `http://www.passportjs.org/`
+
+# Yo Generator
+-  `yo hyperledger-composer:angular`
+- Note: to update version 
+`npm uninstall -g generator-hyperledger-composer`
+`npm install -g generator-hyperledger-composer`
+&& `npm i composer-client@0.20.0`
+- To run angular project `ng serve --proxy-config proxy.conf.json`
