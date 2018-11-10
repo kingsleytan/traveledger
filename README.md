@@ -18,5 +18,5 @@ Travedger - Hyperledger Composer Network
 `composer network install -a traveledger@0.0.1.bna -c PeerAdmin@hlfv1`
 - Step 4: Start BNA on Fabric
 `composer network start -c PeerAdmin@hlfv1 -n traveledger -V 0.0.1 -A admin -S password`
-- (Optional) Import composer card
-`composer card import -f ./admin\@test-bna.card`
+- Step 5: Import composer card
+`composer card import -f ./admin\@traveledger.card`
